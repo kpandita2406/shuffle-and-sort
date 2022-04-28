@@ -1,0 +1,129 @@
+body{
+    background-color:#000;
+    font-family: arial,sans-serif;
+    text-align: center;
+    font-size: 16px; 
+    margin: 0;
+    padding: 0%;
+}
+header{
+    color: #ffffff;
+    padding: 1% 0;
+    font-size: 1.2em;
+    line-height: 2;
+}
+.container{
+    background-color: #ffffff;
+    height: auto;
+}
+.main-card{
+    display: grid;
+    padding : 5% 10%
+}
+
+.shuffle-cards{
+    display: grid;
+    font-weight: bold;
+    row-gap: 5px;
+    order : 2;
+    padding: 0;
+    
+}
+
+.shuffle-cards li {
+    color: #000;
+    height : 100%;
+    text-align: center;
+    list-style-type: none;
+    line-height: 3; 
+    font-size: 20px;  
+    background-color: #EFEFEF;    
+    
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 25% 25%;
+    order: 1;
+    justify-content:center
+}
+
+button {
+    margin-top: 2%;
+    border:none;
+    background-color: #61b8d3;
+    border-radius: 12px;
+    padding: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-size: 10px
+
+}
+
+button:hover{
+    box-shadow: 0 5px  #2B8EAD;
+    cursor: pointer;
+}
+
+.copyright{
+    font-style: italic;
+    font-size : 12px;
+    color: #000;
+    margin-top: 1%
+}
+
+@media only screen and (min-width: 960px) {
+    body {
+        background-color: #ffffff;
+    }
+    header{
+        color: #000;
+        padding: 1% 0;
+        font-size: 1.2em;
+    }
+    .container{
+        background-color: #EFEFEF;
+    }
+    .main-card{
+        border-top: #BFBFBF 5px solid;
+        grid-template-columns: 70% 30%;
+        padding : 0
+    }
+    
+    .shuffle-cards{
+        top: 0;
+        grid-template-columns: 30% 30% 30%;
+        order : 1; 
+        margin: 0px;
+        padding : 0px;  
+    }
+
+    .shuffle-cards li {
+        margin-top:0px;
+        line-height: 3; 
+        color: #ffffff;
+        padding: 15px;
+        font-size: 50px;
+        grid-template-columns: auto auto auto;
+
+    }
+
+    .buttons{
+        grid-template-rows: 50px 50px;
+        grid-template-columns: 65%;
+        order : 2;
+        row-gap: 5px;
+    }
+
+    button {
+        margin-top: 2%;
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    .copyright{
+        margin-top: 3%
+    }
+
+}
